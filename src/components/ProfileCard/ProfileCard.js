@@ -1,19 +1,23 @@
 import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faMinus,
+  faPlus,
+  faInfoCircle,
+} from "@fortawesome/free-solid-svg-icons";
 
-function ProfileCard({ img,alt,titulo, }) {
+function ProfileCard({ img, alt, titulo }) {
+  const [count, setCount] = useState(0);
 
-    const [count, setCount] = useState(0);
-
-    function handleClickAgregar(){
-        setCount( count + 1 );
-    }
-    function handleClickEliminar(){
-        setCount( count - 1 );
-    }
-
+  function handleClickAgregar() {
+    setCount(count + 1);
+  }
+  function handleClickEliminar() {
+    setCount(count - 1);
+  }
 
   return (
-    <div className="card">
+    <div className="card shadow-lg p-3 mb-5 bg-body-tertiary">
       <div className="card-img-top">
         <img src={img} alt={alt} />
         <div className="card-body"></div>
@@ -22,16 +26,20 @@ function ProfileCard({ img,alt,titulo, }) {
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
         </p>
-        <button href="#" onClick={handleClickAgregar} className="btn btn-primary m-1">
-          Agregar
+        <span className="d-flex justify-content center shadow-sm p-3 bg-body-tertiary rounded rounded-pill">{count}</span>
+        <button href="#" onClick={handleClickAgregar} className="btn btn-outline-success m-2">
+          <FontAwesomeIcon icon={faPlus} />
         </button>
-        <button href="#" onClick={handleClickEliminar} className="btn btn-primary m-1">
-        Eliminar
+        <button href="#" className="btn btn-outline-info m-2">
+          <FontAwesomeIcon icon={faInfoCircle} />
         </button>
-        <button href="#" className="btn btn-primary m-1">
-        Detalles
+        <button href="#" onClick={handleClickEliminar} className="btn btn-outline-danger m-2">
+          <FontAwesomeIcon icon={faMinus} />
         </button>
-        <span className="d-flex justify-content-center p-2">Cantidad {count}</span>
+        
+        <span className="d-flex justify-content-center p-2">
+          
+        </span>
       </div>
     </div>
   );

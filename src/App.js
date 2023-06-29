@@ -1,6 +1,8 @@
 import NavBar from "./components/Navbar/NavBar";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import Inicio from "./components/Paginas/inicio";
 import Modelos from "./components/Paginas/Modelos";
 import Contacto from "./components/Paginas/Contacto";
@@ -41,5 +43,5 @@ function App() {
     </div>
   );
 }
-
+library.add(faPlus);
 export default App;
