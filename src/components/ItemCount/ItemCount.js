@@ -18,6 +18,7 @@ const ItemCount = ({ stock, initial, onAdd }) => {
   return (
     <div className="Counter">
       <div className="container text-center">
+        <h4>{quantity}</h4>
         <button
           href="#"
           className="btn btn-outline-success m-2"

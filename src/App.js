@@ -1,5 +1,4 @@
 import NavBar from "./components/Navbar/NavBar";
-import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -15,13 +14,14 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <NavBar />
-        <ItemListContainer greeting={"Bienvenidos a Toyoya Argentina"} />
-        <ItemDetailContainer />
         <Routes>
           <Route path="/" element={<Home/>} />
-          <Route path="Accesorios" element={<Accesorios/>} />
-          <Route path="Contacto" element={<Contacto/>} />
-          <Route path="*" element={<Error/>} />
+            <Route path="itemId" element={<ItemDetailContainer/>} />
+            <Route path="Accesorios" element={<Accesorios/>} />
+            
+            <Route path="Contacto" element={<Contacto/>} />
+            <Route path="*" element={<Error/>} />
+          <Route/>
         </Routes>
       </BrowserRouter>
     </div>
