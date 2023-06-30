@@ -1,7 +1,7 @@
 import React from "react";
 
 
-const Inicio = () => {
+const Home = () => {
   return(
       <div>
           <h1 className="text-center">Página principal</h1>
@@ -9,4 +9,4 @@ const Inicio = () => {
   )
 }
 
-export default Inicio;
+export default Home;
