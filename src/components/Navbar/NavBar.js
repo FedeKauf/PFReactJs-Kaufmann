@@ -6,7 +6,7 @@ const NavBar = () => {
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
         <Link to="/">
-          <img width= "200" src="./toyota-logo.png" alt="logoEcommerce"></img>
+          <img width= "150" src="https://seeklogo.com/images/T/toyota-logo-08A29AEE08-seeklogo.com.png" alt="logoEcommerce"></img>
         </Link>
         <button
           className="navbar-toggler"
@@ -27,8 +27,13 @@ const NavBar = () => {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link active fs-3" to={'/accesorios'}>
-                Accesorios
+              <NavLink className="nav-link active fs-3" to={'/category/automoviles'}>
+                Autos
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link active fs-3" to={'/category/camionetas'}>
+                Camionetas
               </NavLink>
             </li>
             <li className="nav-item">

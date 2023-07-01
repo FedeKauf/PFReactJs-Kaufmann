@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 
-const Item = ({ id, name, img, price, stock }) => {
+const Item = ({ id, name, img, category }) => {
   return (
     <div className="container w-50 justify-content-center">
       <div className="card shadow-lg p-3 mb-5 bg-body-tertiary">
@@ -14,11 +14,10 @@ const Item = ({ id, name, img, price, stock }) => {
               <img src={img} alt={name} />
             </picture>
             <section>
-              <p>${price}</p>
-              <p>Stock Disponible: {stock}</p>
+              <p>{category}</p>
             </section>
             <footer>
-              <Link to={`/item${id}`}>Ver ficha</Link>
+              <Link to={`/item/${id}`}>Ver ficha</Link>
             </footer>
           </article>
         </div>

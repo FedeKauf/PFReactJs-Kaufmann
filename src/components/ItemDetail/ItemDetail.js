@@ -1,6 +1,9 @@
 import ItemCount from "../ItemCount/ItemCount";
 
-const ItemDetail = ({ id, name, img, description, price, stock, quantity }) => {
+const ItemDetail = ({ id, name, img, category, description, price, stock}) => {
+  const onAdd = (quantity) => {
+    console.log(`Agregó ${quantity} ${name} al carrito`)
+  }
   return (
     <div className="container w-50 card shadow-lg p-3 mb-5 bg-body-tertiary">
       <div className="card-img-top">
@@ -12,6 +15,7 @@ const ItemDetail = ({ id, name, img, description, price, stock, quantity }) => {
             <img src={img} alt={name} />
           </picture>
           <section>
+            <p>{category}</p>
             <p>{description}</p>
             <p>${price}</p>
             <p>Stock Disponible: {stock}</p>
@@ -20,7 +24,7 @@ const ItemDetail = ({ id, name, img, description, price, stock, quantity }) => {
             <ItemCount
               initial={1}
               stock={stock}
-              onAdd={quantity}
+              onAdd={onAdd}
             />
           </footer>
         </article>
