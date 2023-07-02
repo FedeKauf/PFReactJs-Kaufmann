@@ -5,7 +5,7 @@ const ItemDetail = ({ id, name, img, category, description, price, stock}) => {
     console.log(`Agregó ${quantity} ${name} al carrito`)
   }
   return (
-    <div className="container w-50 card shadow-lg p-3 mb-5 bg-body-tertiary">
+    <div className="container w-50 card shadow-lg mb-5 mt-5 bg-body-tertiary">
       <div className="card-img-top">
         <article className="card-body text-center">
           <header>

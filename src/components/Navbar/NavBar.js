@@ -22,23 +22,23 @@ const NavBar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav mx-auto">
             <li className="nav-item">
-              <NavLink className="nav-link active fs-3" to="/">
-                Inicio
+              <NavLink className="nav-link active fs-3 nav-menu" to="/">
+                INICIO
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link active fs-3" to={'/category/automoviles'}>
-                Autos
+                AUTOS
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link active fs-3" to={'/category/camionetas'}>
-                Camionetas
+                CAMIONETAS
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link active fs-3" to={'./Contacto'}>
-                Contacto
+                CONTACTO
               </NavLink>
             </li>
           </ul>
