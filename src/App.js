@@ -6,7 +6,7 @@ import Contacto from "./components/Paginas/Contacto";
 import Error from "./components/Paginas/Error";
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
-import { CartProvider } from "./components/Context/CartContext";
+import { CartProvider } from "./Context/CartContext";
 import Cart from "./components/Cart/Cart";
 
 function App() {
