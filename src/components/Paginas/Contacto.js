@@ -10,6 +10,7 @@ const Contacto = () => {
         <div className="mb-2 p-2">
           <label className="form-label">COMPLETE NAME</label>
           <input
+            id="1"
             type="text"
             className="form-control border-dark rounded-4"
             placeholder="Your first name"
@@ -18,6 +19,7 @@ const Contacto = () => {
         <div className="mb-2 p-2">
           <label className="form-label">COMPLETE LAST NAME</label>
           <input
+            id="2"
             type="text"
             className="form-control border-dark rounded-4"
             placeholder="Your last name"
@@ -26,6 +28,7 @@ const Contacto = () => {
         <div className="mb-2 p-2">
           <label className="form-label">EMAIL ADRESS</label>
           <input
+            id="3"
             type="email"
             className="form-control border-dark rounded-4"
             placeholder="name@example.com"
@@ -33,10 +36,11 @@ const Contacto = () => {
         </div>
         <div className="mb-2 p-2">
           <select
+            id="4"
             className="form-select btn border-dark rounded-4"
             aria-label="Default select example"
           >
-            <option selected>
+            <option>
               Choose your country
             </option>
             <option value="1">
@@ -79,6 +83,7 @@ const Contacto = () => {
         <div className="mb-2 p-2">
           <label className="form-label">Enter your text here</label>
           <textarea
+            id="5"
             className="form-control bg-warning-form border-dark rounded-4"
             rows="3"
             placeholder="Hello!, I am contacting you for..."
@@ -87,10 +92,10 @@ const Contacto = () => {
         <label>
           <div className="form-check form-switch mb-2">
             <input
+              id="6"
               className="form-check-input"
               type="checkbox"
               role="switch"
-              unchecked
             />
             <label className="form-check-label">Check to receibe news</label>
           </div>
