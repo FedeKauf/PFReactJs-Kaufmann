@@ -37,7 +37,7 @@ const ItemListContainer = ({ greeting }) => {
     return(
         <div>
             <h1 className='text-center'>{greeting}</h1>
-            <ItemList products={products}/>
+            {loading ? "Cargando.." : <ItemList products={products}/>}
         </div>
     )
 }
