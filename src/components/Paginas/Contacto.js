@@ -112,7 +112,7 @@ const Contacto = () => {
             className="mb-2 mx-2 p-2 border-dark rounded-2"
           />
         </div>
-        <Link to="/" className="border-black px-3 pb-1 rounded-pill text-white text-decoration-none bg-secondary bg-gradient d-flex justify-content-center mx-4 mt-3">Volver a Home</Link>
+        <Link to="/" className="d-grid mx-auto container btn btn-outline-info m-4">Volver a Home</Link>
       </form>
       
     </div>

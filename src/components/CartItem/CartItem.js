@@ -14,8 +14,8 @@ const CartItem =  ({ name, img, price, quantity}) => {
               <img src={img} alt={name} className="mw-100" />
             </picture>
             <section>
-              <p>{price}</p>
-              <p>{quantity}</p>
+              <p>Precio: {price}</p>
+              <p>Cantidad: {quantity}</p>
             </section>
           </article>
         </div>

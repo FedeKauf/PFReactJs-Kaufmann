@@ -15,21 +15,21 @@ const CheckoutForm = ({onConfirm}) => {
     }
 
   return (
-    <div>
+    <div className="text-center">
       <form onSubmit={handleConfirm}>
-        <div>
-          <label htmlFor="name">Name:</label>
-          <input type="text" id="name" name="name" value= {name} onChange={({target}) => setName(target.value)}/>
+        <div className="mb-2 p-2 container">
+          <label className="form-label text-center" htmlFor="name">Name:</label>
+          <input className="form-control border-dark rounded-4" type="text" id="name" name="name" value= {name} onChange={({target}) => setName(target.value)}/>
         </div>
-        <div>
-          <label htmlFor="phone">Phone:</label>
-          <input type="tel" id="phone" name="phone" value= {phone} onChange={({target}) => setPhone(target.value)} />
+        <div className="mb-2 p-2 container">
+          <label className="form-label" htmlFor="phone">Phone:</label>
+          <input className="form-control border-dark rounded-4" type="tel" id="phone" name="phone" value= {phone} onChange={({target}) => setPhone(target.value)} />
         </div>
-        <div>
-          <label htmlFor="email">Email:</label>
-          <input type="email" id="email" name="email" value= {email} onChange={({target}) => setEmail(target.value)} />
+        <div className="mb-2 p-2 container">
+          <label className="form-label" htmlFor="email">Email:</label>
+          <input className="form-control border-dark rounded-4" type="email" id="email" name="email" value= {email} onChange={({target}) => setEmail(target.value)} />
         </div>
-        <button type="submit">Submit</button>
+        <button className="d-grid mx-auto container btn btn-outline-danger m-4" type="submit">Submit</button>
       </form>
     </div>
   );
